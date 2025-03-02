@@ -15,7 +15,7 @@ curl -sfL https://get.k3s.io | K3S_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  
 curl -sfL https://get.k3s.io | K3S_TOKEN= XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX::server:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX sh -s - agent --server https://network-loadbalancer-k3s- XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com:6443    ----------------> To be run on all the Agents
 ```
-![image](https://github.com/user-attachments/assets/05afb9de-4b0b-4468-ac05-4066c145cda3)
+![image](https://github.com/user-attachments/assets/6b9bebdb-5d19-4010-8b3d-5bdc71df22dc)
 
 As shown in the architecture diagram for K3S HA cluster drawn above I had taken three masters (K3S Servers) and three nodes (K3S Agents). The etcd was treated as the cluster datastore. I had used a Network LoadBalancer in front of all the three K3S Servers as shown in the diagram drawn above to provide high availability. 
 
