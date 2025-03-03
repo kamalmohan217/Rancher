@@ -3,6 +3,11 @@
 1. Provide the kms_key_id of your AWS Account to encrypt the EBS in terraform.tfvars.
 2. Provide Public key in user_data.sh
 
+I had explained here how to create HA (high availability) RKE2 Cluster. In this cluster I used three Kubernetes Masters (RKE2 Servers) and three Kubernetes Workers/Nodes (RKE2 Agents). I used a Network LoadBalancer as a fixed registration address. The Aws Resources (EC2 Instances, Autoscaling Group, Launch Template, Security Group and LoadBalancer) which was being used in this RKE2 Cluster had been created using the terraform. The Terraform script is available in this GitHub Repository.    
+The fixed registration address had been used in front of RKE2 server nodes which allow other RKE2 nodes to register with RKE2 Cluster.
+
+![image](https://github.com/user-attachments/assets/815e048d-517a-4b14-a723-9e7e61e30138)
+
 ### Creation of RKE2 HA Cluster  
 ```
 ===================================================================================================================
@@ -62,3 +67,5 @@ systemctl start rke2-agent.service
 ```
 
 Where IP Address 10.XX.X.178 is the IP Address of first RKE2 Server and network-loadbalancer-rke2-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com is the DNS Name of the Network LoadBalancer which was used as a fixed registration address.
+
+![image](https://github.com/user-attachments/assets/276b2ba5-39c2-4e4e-93d0-d5e02fc73e72)
