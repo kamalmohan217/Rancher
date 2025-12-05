@@ -70,6 +70,6 @@ systemctl start rke2-agent.service
 
 Where nlb-rke2-internal-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com is the DNS Name of the Internal Network LoadBalancer which was used as a fixed registration address and nlb-rke2-external-XXXXXXXXXXXXXXXX.elb.us-east-2.amazonaws.com is the DNS Name of the External Network LoadBalancer which was used to route external user’s request. 
 
-<img width="1243" height="205" alt="image" src="https://github.com/user-attachments/assets/9b40af3a-bbf1-49d2-ab14-951574ebf596" />
+<img width="1243" height="205" alt="image" src="https://github.com/user-attachments/assets/2272874b-2fa7-49ae-afff-43d90ba08bc6" />
 
 
